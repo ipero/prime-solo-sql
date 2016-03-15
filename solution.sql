@@ -38,5 +38,5 @@ transactions_attempted, account_balance) VALUES ('John', 'Bloomington', 7, 2, 35
 -- 9. The bank is losing money in Miami and Phoenix and needs to unload low
 -- transaction customers: Delete users that reside in Miami OR phoenix and have
 -- completed fewer than 5 transactions.
-DELETE FROM syntax_practice WHERE (city = 'chicago' OR city = 'miami') AND
-transactions_completed <4;
+DELETE FROM syntax_practice WHERE (city = 'phoenix' OR city = 'miami') AND
+transactions_completed <5;
